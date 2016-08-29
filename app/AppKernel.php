@@ -13,9 +13,9 @@ class AppKernel extends Kernel
      */
     public function registerBundles()
     {
-        return array(
+        return [
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-        );
+        ];
     }
 
     /**
@@ -24,13 +24,13 @@ class AppKernel extends Kernel
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
         $loader->load(function ($container) {
-            $container->loadFromExtension('framework', array(
+            $container->loadFromExtension('framework', [
                 'test' => null,
                 'secret' => 'secret',
-                'router' => array(
+                'router' => [
                     'resource' => '%kernel.root_dir%/config/routing.yml',
-                ),
-            ));
+                ],
+            ]);
         });
     }
 }
