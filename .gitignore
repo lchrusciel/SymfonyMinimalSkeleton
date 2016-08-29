@@ -1,0 +1,5 @@
+vendor/
+app/cache/
+app/logs/
+!app/logs/.gitkeep
+!app/cache/.gitkeep

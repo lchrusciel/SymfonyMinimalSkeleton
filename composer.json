@@ -1,0 +1,19 @@
+{
+    "name": "chrustu/symfony-minimal-skeleton",
+    "description": "Minimalistic skeleton of symfony framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Łukasz",
+            "email": "lchrusciel@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "^3.1",
+        "symfony/console": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {"App\\": "src/"}
+    }
+}
